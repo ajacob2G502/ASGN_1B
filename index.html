@@ -139,6 +139,78 @@
           </article>
         </div>
       </section>
+      <section id="register" class="section-container">
+        <div class="form-wrapper">
+          <header class="section-header">
+            <h2 class="section-title">Pre-Registration</h2>
+            <p class="section-subtitle">
+              No credit card required · Setup in minutes · OpenTelemetry native
+            </p>
+          </header>
+
+          <form action="#" method="post" class="lead-form">
+            <div class="form-group">
+              <label for="work-email" class="form-label"
+                >Work Email <span class="required-mark">*</span></label
+              >
+              <input
+                type="email"
+                name="workEmail"
+                id="work-email"
+                class="form-control"
+                placeholder="abc@xyz.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="node-volume" class="form-label"
+                >Estimated Node Count</label
+              >
+
+              <input
+                type="number"
+                name="nodeVolume"
+                id="node-volume"
+                class="form-control"
+                min="1000"
+                max="5000000000"
+                step="1000"
+                placeholder="50000"
+              />
+              <span class="input-hint">Min: 1,000 - Max: 5,000,000,000</span>
+            </div>
+
+            <div class="form-group">
+              <label for="business-tier" class="form-label"
+                >Target Tier Selection</label
+              >
+              <select
+                name="businessTier"
+                id="business-tier"
+                class="form-control"
+              >
+                <option value="starter">Starter ($29 Monthly Fee)</option>
+                <option value="growth">Growth ($99 Monthly Fee)</option>
+                <option value="enterprise">Enterprise (Custom)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              Pre-Register
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="footer-copy">&copy; 2026 DevPulse Tech Inc.</p>
+        <nav class="footer-links">
+          <a href="#hero" class="footer-link">Back to Top</a>
+          <a href="#features" class="footer-link">Features</a>
+          <a href="#pricing" class="footer-link">Tiers</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
