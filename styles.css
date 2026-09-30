@@ -51,7 +51,7 @@ html {
 
 .btn-primary {
   background-color: var(--primary);
-  color: var(#fff);
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -88,7 +88,7 @@ html {
 
 .btn-sm {
   padding: 0.5rem 1rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
 }
 
 .site-header {
@@ -382,4 +382,241 @@ html {
 
 .footer-links a:hover {
   color: var(--text-main);
+}
+
+/* css media queries */
+
+@media (max-width: 900px) {
+  .site-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .hero-section {
+    padding: 5rem 1.5rem 3rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-container {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .features-grid,
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .form-wrapper {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .hero-section {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-group {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cta-group .btn {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .btn-sm {
+    padding: 0.5rem 0.85rem;
+    font-size: 1rem;
+  }
+
+  .section-container {
+    padding: 3rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-card:hover {
+    transform: none;
+  }
+
+  .feature-title {
+    font-size: 1.15rem;
+  }
+
+  .feature-desc {
+    font-size: 0.9rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .tier-name {
+    font-size: 1.35rem;
+  }
+
+  .price-val {
+    font-size: 1.8rem;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .lead-form {
+    gap: 1rem;
+  }
+
+  .form-control {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .form-wrapper {
+    padding: 1.25rem;
+  }
+
+  .feature-card,
+  .pricing-card {
+    padding: 1.25rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
